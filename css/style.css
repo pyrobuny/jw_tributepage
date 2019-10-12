@@ -1,0 +1,169 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #333;
+  color:#ccc;
+}
+
+nav {
+  background-color: #0A0A0A;
+  color: #ccc;
+  padding: 1em;
+  font-size: 125%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu-links {
+  flex-basis: 66%;
+  display: flex;
+  justify-content: space-between;
+  color: #ccc;
+}
+
+.search-bar {
+  flex-basis: 33%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav a {
+  color: #abcdef;
+}
+
+header {
+  background-color: #333;
+  padding: 2em;
+  color: #ccc;
+}
+
+h1, h2 {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+.splash {
+  display: flex;
+  justify-content: space-between;
+  background-image: url("../images/desk2.jpg");
+  background-repeat: no-repeat;
+  padding: 10em 0;
+  background-position: center;
+  background-size: cover;
+}
+
+.splash-txt {
+  align-self: center;
+  font-size: 200%;
+  flex-basis: 75%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+article {
+  display: grid;
+  grid-gap: 1em;
+  background-color: #333;
+  border-radius: 10px;
+  /*
+  border-top: 1px solid #dfdfdf;
+  border-left: 1px solid #dfdfdf;
+  border-right: 1px solid #dfdfdf;
+  border-bottom: 1px solid #dfdfdf;
+  */
+  grid-template-areas:
+  "image1 text1"
+  "text2 image2"
+  "image3 text3"
+  "text4 image4"
+  "ban1 ban1";
+}
+
+.image1 {
+  grid-area:image1;
+  padding: 2em 0;
+  margin: 5px;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.image2 {
+  grid-area:image2;
+  padding: 2em 0;
+  margin: 5px;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.image3 {
+  grid-area:image3;
+  padding: 2em 0;
+  margin: 5px;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.image4 {
+  grid-area:image4;
+  padding: 2em 0;
+  margin: 5px;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.text1 {
+  grid-area:text1;
+  padding: 2em 0;
+  margin: 5px;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.text2 {
+  grid-area:text2;
+  padding: 2em 0;
+  margin: 5px;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.text3 {
+  grid-area:text3;
+  padding: 2em 0;
+  margin: 5px;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.text4 {
+  grid-area:text4;
+  padding: 2em 0;
+  margin: 5px;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.ban1 {
+  grid-area:ban1;
+  padding: 2em 0;
+  margin: 5px;
+}
+
+@media screen and (max-width: 767px) {
+  article{
+    grid-template-areas:
+    "image1"
+    "text1"
+    "image2"
+    "text2"
+    "image3"
+    "text3"
+    "image4"
+    "text3"
+  }
